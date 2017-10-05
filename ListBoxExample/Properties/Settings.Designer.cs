@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RadioButton1.Properties
+namespace ListBoxExample.Properties
 {
 
 

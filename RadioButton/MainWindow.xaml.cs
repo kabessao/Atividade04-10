@@ -13,16 +13,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RadioButton
+namespace RadioButton1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region construtor
         public MainWindow()
         {
             InitializeComponent();
+        }
+        #endregion
+
+
+        private void Mudar(object sender, RoutedEventArgs e)
+        {
+            txtTexto.FontSize = double.Parse((sender as RadioButton).Content.ToString());
         }
     }
 }

@@ -1,12 +1,34 @@
-﻿<Window x:Class="RadioButton.MainWindow"
+﻿<Window x:Class="RadioButton1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:RadioButton"
+        xmlns:local="clr-namespace:RadioButton1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" SizeToContent="Height" Width="200">
+    <Border Margin="5">
+        <StackPanel>
+
+
+            <GroupBox Header="teste">
+                <StackPanel>
+                    <RadioButton Content="20" x:Name="rdb20"
+                                 Click="Mudar"/>
+                    <RadioButton Content="30" x:Name="rdb30"
+                                 Click="Mudar"/>
+
+                </StackPanel>
+            </GroupBox>
+            <TextBox x:Name="txtTexto" Text="Algum texto aki"/>
+
+
+
+
+
+
+
+        </StackPanel>
         
-    </Grid>
+        
+    </Border>
 </Window>
